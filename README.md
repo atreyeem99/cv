@@ -4,7 +4,7 @@ My [CV](https://atreyeem99.github.io/cv/).
 This repository hosts my personal academic website.
 
 👉 **Visit the website:**  
-🔗 https://atreyeem99.github.io
+https://atreyeem99.github.io/cv/
 
 ---
 
