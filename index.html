@@ -2,108 +2,225 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Atreyee Majumdar</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Atreyee | Chemistry PhD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #FFF5F7;
+      --pink: #E88AAE;
+      --rose: #F4C2D7;
+      --dark: #3A2E39;
+      --muted: #7A6F77;
+      --card: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, var(--bg), #ffffff);
+      color: var(--dark);
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      min-height: 100vh;
+      padding: 4rem;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero h2 {
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 1.2rem;
+      max-width: 420px;
+    }
+
+    .blob {
+      width: 100%;
+      height: 360px;
+      background: radial-gradient(circle at 30% 30%, var(--rose), var(--pink));
+      border-radius: 60% 40% 55% 45%;
+    }
+
+    /* ABOUT CARD */
+    .about {
+      max-width: 720px;
+      margin: -120px auto 0;
+      background: var(--card);
+      padding: 2.5rem;
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .about h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    /* TAGS */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 3rem auto;
+      max-width: 800px;
+    }
+
+    .tag {
+      background: var(--rose);
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      transition: transform 0.2s ease;
+    }
+
+    .tag:hover {
+      transform: translateY(-4px);
+    }
+
+    /* TIMELINE */
+    .timeline {
+      max-width: 700px;
+      margin: 4rem auto;
+      padding-left: 2rem;
+      border-left: 3px solid var(--rose);
+    }
+
+    .event {
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .event::before {
+      content: '';
+      position: absolute;
+      left: -11px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      background: var(--pink);
+      border-radius: 50%;
+    }
+
+    .event h4 {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .event p {
+      margin: 0.4rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--pink);
+      text-decoration: none;
+      margin: 0 0.8rem;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 3rem 2rem;
+      }
+
+      .blob {
+        height: 280px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <img src="propic.jpg" alt="Atreyee Majumdar">
-  <div>
-    <h1>Atreyee Majumdar</h1>
-    <p class="subtitle">
-      PhD Student in Chemistry <br>
-      Tata Institute of Fundamental Research, Hyderabad
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Hi, I’m Atreyee</h1>
+      <h2>
+        Exploring molecules beyond the ground state — where electrons break rules and chemistry gets interesting.
+      </h2>
+    </div>
+    <div class="blob"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h3>About</h3>
+    <p>
+      I’m a PhD student in Chemistry at TIFR Hyderabad. My work focuses on excited-state electronic structure,
+      Hund’s rule violations, and data-driven molecular discovery — sitting somewhere between quantum theory,
+      computation, and curiosity.
     </p>
+  </section>
 
-    <p class="links">
-      <a href="mailto:iamatreyee@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://github.com/atreyeem99"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/atreyee-majumdar"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://share.google/4FTMfWvBvehYg47rN"><i class="fa-solid fa-graduation-cap"></i></a>
-      <a href="https://x.com/AtreyeeMaj62799"><i class="fa-brands fa-x-twitter"></i></a>
-    </p>
-  </div>
-</header>
+  <!-- TAGS -->
+  <section class="tags">
+    <div class="tag">Excited-State Chemistry</div>
+    <div class="tag">Hund’s Rule Violations</div>
+    <div class="tag">Electronic Structure</div>
+    <div class="tag">Data-Driven Discovery</div>
+    <div class="tag">Computational Chemistry</div>
+  </section>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-   I am a PhD student in Chemistry at TIFR Hyderabad, exploring the electronic behavior
-    of molecules beyond the ground state. My research centers on excited-state electronic structure,
-    intriguing violations of Hund’s rule, and data-driven approaches to discovering new molecules.
-  </p>
-</section>
+  <!-- TIMELINE -->
+  <section class="timeline">
+    <div class="event">
+      <h4>PhD in Chemistry</h4>
+      <p>TIFR Hyderabad</p>
+    </div>
+    <div class="event">
+      <h4>Research Interests</h4>
+      <p>Excited states, unconventional electronic behavior, molecular discovery</p>
+    </div>
+  </section>
 
-<section>
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Computational chemistry</li>
-    <li>Chemical space exploration</li>
-    <li>Excited states and singlet–triplet gaps</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <ul>
-    <li><b>PhD in Chemistry</b>, TIFR Hyderabad (2023–present)</li>
-    <li><b>M.Sc. Chemistry</b>, Central University of Rajasthan (2022)</li>
-    <li><b>B.Sc. Chemistry</b>, Scottish Church College, University of Calcutta (2020)</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Publications</h2>
-  <ol>
-    <li>
-      <i>Leveraging the Bias-Variance Tradeoff in Quantum Chemistry for Accurate
-      Negative Singlet–Triplet Gap Predictions</i><br>
-      <b>J. Comput. Chem.</b>, Accepted (2025)
-    </li>
-
-    <li>
-      <i>Unlocking Inverted Singlet–Triplet Gap in Alternant Hydrocarbons with
-      Heteroatoms</i><br>
-      <b>Chem. Sci.</b>, 16, 14392–14407 (2025)
-    </li>
-
-    <li>
-      <i>Influence of Pseudo-Jahn–Teller Activity on the Singlet–Triplet Gap of
-      Azaphenalenes</i><br>
-      <b>PCCP</b>, 26, 26723 (2024)
-    </li>
-
-    <li>
-      <i>Resilience of Hund’s Rule in the Chemical Space of Small Organic Molecules</i><br>
-      <b>PCCP</b>, 26, 14505 (2024)
-    </li>
-  </ol>
-</section>
-
-<section>
-  <h2>Talks & Posters</h2>
-  <ul>
-    <li>Oral Presentation — TACC 2025, TIFR Mumbai</li>
-    <li>SDMC 2025 Poster</li>
-    <li>ChemSci 2024 Poster</li>
-    <li>AOSC 2025 Poster</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Software Skills</h2>
-  <ul>
-    <li>Python, Fortran 90/95, Java</li>
-    <li>ORCA, Gaussian, Q-Chem, Molpro</li>
-  </ul>
-</section>
-
-<footer>
-  © 2026 Atreyee Majumdar
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>Let’s connect</p>
+    <a href="#">GitHub</a>
+    <a href="#">Email</a>
+    <a href="#">Google Scholar</a>
+  </footer>
 
 </body>
 </html>
