@@ -5,7 +5,7 @@
   <title>Atreyee Majumdar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Icons -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,9 +15,7 @@
 <header class="hero">
   <img src="propic.jpg" alt="Atreyee Majumdar" class="profile-pic">
   <h1>Atreyee Majumdar</h1>
-  <p class="subtitle">
-    Computational & Excited-State Chemistry · Molecular Design
-  </p>
+  <p class="subtitle">Computational & Excited-State Chemistry</p>
 
   <div class="social-icons">
     <a href="https://share.google/4FTMfWvBvehYg47rN" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
@@ -30,36 +28,34 @@
 <main>
 
 <section class="hero-quote reveal">
-  Exploring excited states, bending Hund’s rule, and navigating chemical space —
-  one molecule at a time.
+  Exploring excited states, bending Hund’s rule, and navigating chemical space — one molecule at a time.
 </section>
 
 <section class="card reveal">
   <h2>About Me</h2>
   <p>
     My research focuses on excited-state electronic structure, violations of Hund’s rule,
-    and data-driven exploration of chemical space, with a strong emphasis on symmetry
-    and molecular design principles.
+    and data-driven exploration of chemical space, with emphasis on symmetry,
+    structure–property relationships, and molecular design.
   </p>
 </section>
 
 <section class="card reveal">
   <h2>Education</h2>
   <ul>
-    <li><b>PhD Chemistry</b>, TIFR Hyderabad (2023–present)</li>
-    <li><b>M.Sc. Chemistry</b>, Central University of Rajasthan</li>
-    <li><b>B.Sc. Chemistry</b>, Scottish Church College</li>
+    <li><b>PhD in Chemistry</b>, TIFR Hyderabad (2023–present)</li>
+    <li><b>M.Sc. in Chemistry</b>, Central University of Rajasthan (2020–2022)</li>
+    <li><b>B.Sc. in Chemistry</b>, Scottish Church College (2017–2020)</li>
   </ul>
 </section>
 
 <section class="card reveal">
   <h2>Publications</h2>
-
   <ol class="pub-list">
 
     <li>
       <b>A. Majumdar</b>, R. Ramakrishnan<br>
-      <i>Insights into Symmetry and Substitution Patterns Governing Singlet–Triplet Energy Gap in Azaphenalenes</i><br>
+      <i>Insights into Symmetry and Substitution Patterns Governing Singlet–Triplet Energy Gap in the Chemical Space of Azaphenalenes</i><br>
       <span class="journal">Chemistry – A European Journal</span>, accepted (2026) ·
       <a href="https://doi.org/10.48550/arXiv.2511.08235" target="_blank">DOI</a>
     </li>
@@ -98,17 +94,33 @@
 
 <section class="card reveal">
   <h2>Posters & Talks</h2>
-
   <ul class="poster-list">
-    <li data-img="AOSC_poster.jpg">
-      🏆 <b>Best Poster Award</b> — AOSC 2025
+
+    <li>
+      🏆 <b>Best Poster Award</b> — 
+      <i>“Unlocking Inverted Singlet–Triplet Gap in Alternant Hydrocarbons with Heteroatoms”</i>,  
+      9th Asian and Oceanian Spectroscopy Conference (AOSC-2025)
+      <span class="mini-icon" data-img="AOSC_poster.jpg">📸</span>
     </li>
-    <li data-img="SDMC_poster.jpg">
-      SDMC 2025 — Hund’s-rule Violating Organic Molecules
+
+    <li>
+      <i>“In Pursuit of Hund’s-Rule Violating Organic Molecules”</i>,  
+      Spectroscopy and Dynamics of Molecules and Clusters (SDMC-2025)
+      <span class="mini-icon" data-img="SDMC_poster.jpg">📸</span>
     </li>
-    <li data-img="Chem_SCI_TVM.jpg">
-      ChemSci 2024 — True & False Positives
+
+    <li>
+      <i>“A Tale of True & False Positives in Search of Hund’s-Rule Violating Organic Molecules”</i>,  
+      ChemSci 2024 – Leaders in the Field Symposium
+      <span class="mini-icon" data-img="TCS_poster.jpg">📸</span>
     </li>
+
+    <li>
+      <b>Oral Presentation:</b>  
+      <i>“Unlocking Inverted Singlet–Triplet Gap in Alternant Hydrocarbons with Heteroatoms”</i>,  
+      TIFR Annual Chemistry Conference (2025)
+    </li>
+
   </ul>
 </section>
 
@@ -116,9 +128,9 @@
   <h2>Hobbies & Interests</h2>
   <div class="chips">
     <span>🎶 Singing</span>
-    <span>🎨 Design</span>
-    <span>🎬 Thriller Movies</span>
-    <span>🌍 Exploring Places</span>
+    <span>🎨 Design & aesthetics</span>
+    <span>🎬 Thriller movies</span>
+    <span>🌍 Exploring new places</span>
     <span>🎲 Carrom</span>
   </div>
 </section>
@@ -135,11 +147,16 @@
 </main>
 
 <footer>
-  Designed with curiosity & caffeine ☕ · © 2026
+  Designed with curiosity & caffeine ☕ · © 2026 Atreyee Majumdar
 </footer>
 
+<!-- MINI POPUP -->
+<div id="mini-popup" class="mini-popup">
+  <img id="mini-img">
+</div>
+
 <!-- MODAL -->
-<div class="modal" id="modal">
+<div id="modal" class="modal">
   <span class="close">&times;</span>
   <img id="modal-img">
 </div>
@@ -147,21 +164,29 @@
 <script>
 /* Scroll reveal */
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add("active");
-  });
+  entries.forEach(e => e.isIntersecting && e.target.classList.add("active"));
 },{ threshold: 0.15 });
-
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
-/* Poster + gallery modal */
-document.querySelectorAll(".poster-list li, .gallery img").forEach(el => {
-  el.addEventListener("click", () => {
-    document.getElementById("modal").style.display = "flex";
-    document.getElementById("modal-img").src = el.dataset.img || el.src;
-  });
+/* Mini poster popup */
+document.querySelectorAll(".mini-icon").forEach(icon => {
+  icon.onclick = e => {
+    e.stopPropagation();
+    document.getElementById("mini-img").src = icon.dataset.img;
+    document.getElementById("mini-popup").style.display = "block";
+  };
 });
+document.body.onclick = () =>
+  document.getElementById("mini-popup").style.display = "none";
 
+/* Gallery modal */
+document.querySelectorAll(".gallery img").forEach(img => {
+  img.onclick = e => {
+    e.stopPropagation();
+    document.getElementById("modal-img").src = img.src;
+    document.getElementById("modal").style.display = "flex";
+  };
+});
 document.querySelector(".close").onclick = () =>
   document.getElementById("modal").style.display = "none";
 </script>
