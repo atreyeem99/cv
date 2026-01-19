@@ -13,7 +13,7 @@ body {
   color: var(--ink);
 }
 
-/* BACKGROUND GLOW */
+/* Soft background glow */
 body::before {
   content: "";
   position: fixed;
@@ -32,18 +32,18 @@ body::before {
 
 .profile-pic {
   width: 140px;
+  height: 140px;
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid var(--rose);
 }
 
-.subtitle {
-  color: var(--rose);
-}
+.subtitle { color: var(--rose); }
 
 .social-icons a {
   margin: 0 .6rem;
-  color: var(--ink);
   font-size: 1.2rem;
+  color: var(--ink);
 }
 
 .hero-quote {
@@ -108,12 +108,29 @@ main {
 }
 
 .poster-list li {
-  cursor: pointer;
   margin-bottom: 1rem;
 }
 
-.poster-list li:hover {
-  color: var(--rose);
+.mini-icon {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.mini-popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: white;
+  padding: 10px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+  display: none;
+  z-index: 999;
+}
+
+.mini-popup img {
+  width: 220px;
+  border-radius: 10px;
 }
 
 .chips span {
@@ -132,11 +149,12 @@ main {
 
 .gallery img {
   width: 100%;
+  height: 240px;
+  object-fit: cover;
   border-radius: 14px;
   cursor: pointer;
 }
 
-/* REVEAL */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -147,7 +165,6 @@ main {
   transform: none;
 }
 
-/* MODAL */
 .modal {
   display: none;
   position: fixed;
@@ -157,15 +174,16 @@ main {
   justify-content: center;
 }
 .modal img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 85vw;
+  max-height: 85vh;
+  border-radius: 14px;
 }
 .close {
   position: absolute;
   top: 20px;
   right: 30px;
-  color: white;
   font-size: 2rem;
+  color: white;
   cursor: pointer;
 }
 
