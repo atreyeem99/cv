@@ -7,58 +7,55 @@
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <img src="propic.jpg" alt="Atreyee Majumdar" class="profile-pic">
-
+<header class="hero">
+  <img src="propic.jpg" class="profile-pic" alt="Atreyee Majumdar">
   <h1>Atreyee Majumdar</h1>
-  <p class="subtitle">
-    PhD Student in Chemistry · Computational & Excited-State Chemistry
-  </p>
+  <p class="subtitle">PhD Student · Computational & Excited-State Chemistry</p>
 
   <div class="social-icons">
-    <a href="https://share.google/4FTMfWvBvehYg47rN" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
-    <a href="https://x.com/AtreyeeMaj62799" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-    <a href="https://github.com/atreyeem99" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+    <a href="https://x.com/AtreyeeMaj62799"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://github.com/atreyeem99"><i class="fa-brands fa-github"></i></a>
     <a href="mailto:iamatreyee@gmail.com"><i class="fa-solid fa-envelope"></i></a>
   </div>
 </header>
 
 <main>
 
-<section class="card">
+<!-- ABOUT -->
+<section class="card reveal">
   <h2>About Me</h2>
   <p>
-    I am a PhD student in Chemistry at TIFR Hyderabad.  
-    My research explores excited-state electronic structure, violations of Hund’s rule,
-    and data-driven molecular discovery—bridging quantum chemistry with chemical space exploration.
+    I work on excited-state electronic structure, Hund’s-rule violations,
+    and data-driven exploration of chemical space, with a strong interest
+    in symmetry and molecular design.
   </p>
 </section>
 
-<section class="card">
+<!-- EDUCATION -->
+<section class="card reveal">
   <h2>Education</h2>
   <ul>
-    <li><b>PhD in Chemistry</b>, TIFR Hyderabad (2023–present)</li>
-    <li><b>M.Sc. Chemistry</b>, Central University of Rajasthan (2020–2022)</li>
-    <li><b>B.Sc. Chemistry</b>, Scottish Church College (2017–2020)</li>
-    <li><b>ISC</b>, The Future Foundation School</li>
-    <li><b>ICSE</b>, The Future Foundation School</li>
+    <li><b>PhD Chemistry</b>, TIFR Hyderabad (2023–present)</li>
+    <li><b>M.Sc. Chemistry</b>, Central University of Rajasthan</li>
+    <li><b>B.Sc. Chemistry</b>, Scottish Church College</li>
   </ul>
 </section>
 
-<section class="card">
+<!-- PUBLICATIONS -->
+<section class="card reveal">
   <h2>Publications</h2>
 
   <ol class="pub-list">
 
     <li>
       <span class="authors"><b>A. Majumdar</b>, R. Ramakrishnan</span><br>
-      <i>Insights into Symmetry and Substitution Patterns Governing Singlet–Triplet Energy Gap in the Chemical Space of Azaphenalenes</i><br>
+      <i>Insights into Symmetry and Substitution Patterns Governing Singlet–Triplet Energy Gap in Azaphenalenes</i><br>
       <span class="journal">Chemistry – A European Journal</span>, accepted (2026) ·
       <a href="https://doi.org/10.48550/arXiv.2511.08235" target="_blank">DOI</a>
     </li>
@@ -85,7 +82,8 @@
     </li>
 
     <li>
-      <span class="authors"><b>A. Majumdar</b>, R. Ramakrishnan</span><br>
+      <span class="authors"><b>A. Majumdar</b>, R. Ramakrishnan</span>
+      <span class="badge">🔥 PCCP Hot Article</span><br>
       <i>Resilience of Hund’s Rule in the Chemical Space of Small Organic Molecules</i><br>
       <span class="journal">Physical Chemistry Chemical Physics</span>, 26, 14505 (2024) ·
       <a href="https://doi.org/10.1039/D4CP00886C" target="_blank">DOI</a>
@@ -94,45 +92,72 @@
   </ol>
 </section>
 
-<section class="card">
+<!-- POSTERS & TALKS -->
+<section class="card reveal">
   <h2>Posters & Talks</h2>
-  <ul>
-    <li><i>In Pursuit of Hund’s-rule Violating Organic Molecules</i> — SDMC 2025</li>
-    <li><i>A Tale of True & False Positives</i> — ChemSci 2024</li>
-    <li><i>Unlocking inverted singlet–triplet gap...</i> — AOSC 2025</li>
-    <li><b>Oral:</b> TIFR Annual Chemistry Conference (2025)</li>
+
+  <ul class="poster-list">
+    <li data-img="AOSC_poster.jpg">
+      🏆 <b>Best Poster Award</b> — AOSC 2025
+    </li>
+    <li data-img="SDMC_poster.jpg">
+      SDMC 2025 — Hund’s-rule Violating Organic Molecules
+    </li>
+    <li data-img="Chem_SCI_TVM.jpg">
+      ChemSci 2024 — True & False Positives
+    </li>
   </ul>
 </section>
 
-<section class="card">
-  <h2>My hobbies and interests</h2>
+<!-- HOBBIES -->
+<section class="card reveal">
+  <h2>Hobbies & Interests</h2>
   <ul class="hobby-list">
-    <li>📖 Reading</li>
+    <li>🎶 Singing</li>
     <li>🎨 Design & aesthetics</li>
-    <li>Singing</li>
-    <li>Watching trhriller movies</li>
-    <li>Playing carrom</li>
-    <li>Exploring new places</li>
+    <li>🎬 Thriller movies</li>
+    <li>🌍 Exploring new places</li>
   </ul>
 </section>
 
-
-<section class="card">
+<!-- MEMORIES -->
+<section class="card reveal">
   <h2>Moments & Memories</h2>
   <div class="gallery">
-    <img src="Sittingplace.jpg">
-    <img src="AOSC_poster.jpg">
-    <img src="TCS_poster.jpg">
-    <img src="TCS_talk.jpg">
     <img src="Group.jpg">
+    <img src="TCS_talk.jpg">
+    <img src="Sittingplace.jpg">
   </div>
 </section>
-  
+
 </main>
 
-<footer>
-  © 2026 · Atreyee Majumdar
-</footer>
+<footer>© 2026 · Atreyee Majumdar</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img id="modal-img">
+</div>
+
+<script>
+/* Scroll reveal */
+const obs = new IntersectionObserver(entries =>
+  entries.forEach(e => e.isIntersecting && e.target.classList.add("active")),
+  { threshold: 0.15 }
+);
+document.querySelectorAll(".reveal").forEach(s => obs.observe(s));
+
+/* Poster & gallery modal */
+document.querySelectorAll(".poster-list li, .gallery img").forEach(el => {
+  el.onclick = () => {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modal-img").src = el.dataset.img || el.src;
+  };
+});
+document.querySelector(".close").onclick = () =>
+  document.getElementById("modal").style.display = "none";
+</script>
 
 </body>
 </html>
